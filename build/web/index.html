@@ -1,0 +1,429 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <link rel="apple-touch-icon" sizes="76x76" href="assets/img/apple-icon.png">
+        <link rel="icon" type="image/png" href="assets/img/favicon.png">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+        <title>Smart Study</title>
+
+        <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+        <meta name="google-signin-scope" content="profile email">
+        <meta name="google-signin-client_id" content="920853497647-ksruqmjlbu8ug4lv74tamja3br44t9e4.apps.googleusercontent.com">
+        <!--     Fonts and icons     -->
+        <script src="https://apis.google.com/js/platform.js" async defer></script>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+        <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" />
+        <script src="js/prevent.js"></script>
+
+        <!-- CSS Files -->
+        <link href="bootstrap.min.css" rel="stylesheet" />
+        <link href="material-kit.css" rel="stylesheet"/>
+
+        <!-- CSS Just for demo purpose, don't include it in your project -->
+        <!--	<link rel="stylesheet" href="demo.css" type="text/css" /> -->
+        <style>
+            form {
+                border: 3px solid #f1f1f1;
+            }
+
+            input[type=text], input[type=password] {
+                width: 50%;
+                padding: 12px 20px;
+                margin: 8px 0;
+                display: inline-block;
+                border: 1px solid #ccc;
+                box-sizing: border-box;
+            }
+
+            button {
+                background-color: #4CAF50;
+                color: white;
+                padding: 8px 10px;
+                margin: 8px 0;
+                border: none;
+                cursor: pointer;
+                width: 25%;
+            }
+
+            button:hover {
+                opacity: 0.8;
+            }
+
+
+            .imgcontainer {
+                text-align: center;
+                margin: 24px 0 12px 0;
+            }
+
+
+            .container {
+                padding: 10px;
+            }
+
+            span.psw {
+                float: right;
+                padding-top: 16px;
+            }
+
+            /* Change styles for span and cancel button on extra small screens */
+            @media screen and (max-width: 300px) {
+                span.psw {
+                    display: block;
+                    float: none;
+                }
+
+            }
+        </style>
+
+    </head>
+
+    <body class="index-page">
+        <!-- Navbar -->
+        <nav class="navbar navbar-transparent navbar-fixed-top navbar-color-on-scroll">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navigation-index">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+
+                <div class="collapse navbar-collapse" id="navigation-index">
+                    <ul class="nav navbar-nav navbar-right">
+                        <!--			<li>
+                                                        <a href="components-documentation.html" target="_blank">
+                                                                <i class="material-icons">dashboard</i> Components
+                                                        </a>
+                                                </li>
+                                                <li>
+                                                        <a href="http://demos.creative-tim.com/material-kit-pro/presentation.html?ref=utp-freebie" target="_blank">
+                                                                <i class="material-icons">unarchive</i> Upgrade to PRO
+                                                        </a>
+                                                </li>  -->
+                        <li><a href="#Sign-up"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                        <li><a href="#login"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                        <!--  </ul>
+                                                      <li>
+                                                              <a rel="tooltip" title="Follow us on Twitter" data-placement="bottom" href="https://twitter.com/CreativeTim" target="_blank" class="btn btn-white btn-simple btn-just-icon">
+                                                                      <i class="fa fa-twitter"></i>
+                                                              </a>
+                                                      </li>
+                                                      <li>
+                                                              <a rel="tooltip" title="Like us on Facebook" data-placement="bottom" href="https://www.facebook.com/CreativeTim" target="_blank" class="btn btn-white btn-simple btn-just-icon">
+                                                                      <i class="fa fa-facebook-square"></i>
+                                                              </a>
+                                                      </li>
+                                                      <li>
+                                                              <a rel="tooltip" title="Follow us on Instagram" data-placement="bottom" href="https://www.instagram.com/CreativeTimOfficial" target="_blank" class="btn btn-white btn-simple btn-just-icon">
+                                                                      <i class="fa fa-instagram"></i>
+                                                              </a>
+                                                      </li>
+                      
+                                      </ul> -->
+                </div>
+            </div>
+        </nav>
+        <!-- End Navbar -->
+
+        <div class="wrapper">
+            <div class="header header-filter" style="background-image: url('bg2.jpeg');">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-8 col-md-offset-2">
+                            <div class="brand">
+                                <h1>Smart Study</h1>
+                                <h3>A platform for discussions, learning and growing. </h3>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="main main-raised">
+                <div class="section section-basic">
+                    <div class="container">
+                        <div class="title">
+                            <h2>What We Provide ?</h2><br><br>
+                        </div>
+
+                        <!--       <div id="buttons"> -->
+                        <div class="title">
+                            <h2>Collaborative Notepad</h2>
+                            <h3>You can write or save images of your regarding any topic and save it for sharing or for asking questions related to it within your study group. The text along with questions and answers can be saved in your personalized "Card Box" for future reference.
+                            </h3><br>
+                        </div>
+                        <div class="Notepad" style="display: inline-block;">
+                            <img src="/TestSite/Notepad1.jpg" style="margin-left: 30px; height: 300px; padding: 4px; width: 500px; border: 3px solid #3333cc;"/>
+                            <img src="/TestSite/Notepad2.jpg" style="padding: 4px; height: 300px; margin-left: 30px; width: 500px; border: 3px solid #3333cc;"/>
+                            <!-- Notepad's image when it's ready -->
+                        </div>
+                        <div class="title">
+                            <h2>Question & Answers</h2>
+                            <ul>
+                                <li><h3>Relevant questions can be attached with the image(s) sent to friends or teachers over the web for having personalized discussions through the replies that are received and sent till the time the discussion is closed. They chat and discuss simultaneously.</h3></li>
+                                <li><h3>A Blind discussion involving individual(s) without any of them knowing about who all are being asked.</h3></li>
+                            </ul><br>
+                            <div class="Question" style="display: inline-block">
+                                <img src="/TestSite/Question1.jpg" style="margin-left: 30px; padding: 4px; height: 300px; width: 500px; border: 3px solid #3333cc;" alt='abc'/>
+                                <img src="/TestSite/Question2.jpg" style="padding: 4px; width: 500px; height: 300px; margin-left: 30px; border: 3px solid #3333cc;"/>
+                            </div>
+                        </div>
+                        <!-- Screenshot here as well -->
+
+                        <div class="title">
+                            <h2> Card Box</h2>
+                            <h3>This is your personalized notebook having asked question(s) and answer(s) from your discussion, for a quick glance whenever you want. It's safe and secure, the stored image along with the question and answers are visible to the user who asked the question.</h3><br>
+                        </div>
+                        <div class="Cardbox" style="display: inline-block;">
+                            <img src="/TestSite/Cardbox1.jpeg" style="margin-left: 30px; padding: 4px; height: 300px; width: 500px; border: 3px solid #3333cc;"/>
+                            <img src="/TestSite/Cardbox2.jpeg" style="margin-left: 30px; padding: 4px; height: 300px; width: 500px; border: 3px solid #3333cc;"/>
+                        </div>
+                        <div class="title">
+                            <h2>Search</h2>
+                            <h3>Search through the web to get relevant information, you can even save the links for quick reference. A special feature for the "one-nighters" who wan't to get the grasp of the related material in one go. We basically fetch the data from the most popular search engines and display the relevant links and notes in our custom user interface.</h3>
+                        </div>
+                        <p id="login"></p>
+                        <!DOCTYPE html>
+                        <!--                               <html> -->
+
+                        <!--                             <body> -->
+
+                        <h2>Login Form</h2>
+
+                        <form action="jetter.jsp" method="post">
+
+
+                            <div class="container">
+                                <label style="margin-left: 30px;"><b>Username</b></label>
+                                <input type="text" placeholder="Enter Username" name="Email" required style="margin-left: 100px;">
+                                <br>
+                                <label style="margin-left: 30px;"><b>Password</b></label>
+                                <input type="password" placeholder="Enter Password" name="Password" required style="margin-left: 103px;">
+                                <br>
+                                <button type="submit" style="margin-left: 400px;">Login</button>
+
+                            </div>
+
+
+                        </form>
+
+                        <!--       </body>  -->
+                        <!--   </html> -->
+                        <p id="Sign-up"></p>
+
+                        <div class="section section-full-screen section-signup" style="background-image: url('/TestSite/city.jpg'); background-size: cover; background-position: top center; min-height: 700px;">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-4 col-md-offset-4">
+                                        <div class="card card-signup">
+                                            <div class="header header-primary text-center">
+                                                <h4>Sign Up</h4>
+                                                <div class="social-line">
+                                                    <!--               <a href="#pablo" class="btn btn-simple btn-just-icon">
+                                                                       <i class="fa fa-facebook-square"></i>
+                                                                   </a>
+                                                                   <a href="#pablo" class="btn btn-simple btn-just-icon">
+                                                                       <i class="fa fa-twitter"></i>
+                                                                   </a> -->
+                                                    <form name="GoogleForm" action="AdderTest.jsp" method="post">
+                                                        <input type="hidden" name="Gmail" value="">
+                                                        <input type="hidden" name="GName" value="">
+                                                        <input type="hidden" name="GID" value="">
+                                                    </form>
+                                                    <div class="g-signin2" data-onsuccess="onSignIn"></div>
+                                                    <!--            <i class="fa fa-google-plus"></i> -->
+                                                    <script>
+                                                        function onSignIn(googleUser) {
+                                                            var profile = googleUser.getBasicProfile();
+                                                            var gid = profile.getId();
+                                                            var name = profile.getName();
+                                                            var email = profile.getEmail();
+                                                            var id_token = googleUser.getAuthResponse().id_token;
+                                                            console.log('ID: ' + gid); // Do not send to your backend! Use an ID token instead.
+                                                            console.log('Name: ' + name);
+                                                            console.log('Image URL: ' + profile.getImageUrl());
+                                                            console.log('Email: ' + email); // This is null if the 'email' scope is not present.
+                                                           
+                                                        /*    var xhr = new XMLHttpRequest();
+                                                            xhr.open('POST', 'http://localhost:8080/TestSite/AdderTest.jsp');
+                                                            xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+                                                            xhr.onload = function () {
+                                                                console.log('Signed in as: ' + xhr.responseText);
+                                                            };
+                                                            xhr.send('GID=' + id_token);
+                                                            xhr.send('Gname=' + name);
+                                                            xhr.send('Gmail=' + email); */
+                                                        }
+
+                                                    </script>
+
+
+                                                    <!--                          <div class="g-signin2" data-onsuccess="GoogleAdder.jsp" data-clientid="920853497647-ksruqmjlbu8ug4lv74tamja3br44t9e4.apps.googleusercontent.com" data-cookiepolicy="single_host_origin" data-callback="onSignInCallback">
+      
+                                                                                  <script>
+                                                                                      /**
+                                                                                       * Handler for the signin callback triggered after the user selects an account.
+                                                                                       */
+                                                                                      function onSignInCallback(resp) {
+                                                                                          gapi.client.load('plus', 'v1', apiClientLoaded);
+                                                                                      }
+      
+                                                                                      /**
+                                                                                       * Sets up an API call after the Google API client loads.
+                                                                                       */
+                                                                                      function apiClientLoaded() {
+                                                                                          gapi.client.plus.people.get({userId: 'me'}).execute(handleEmailResponse);
+                                                                                      }
+      
+                                                                                      /**
+                                                                                       * Response callback for when the API client receives a response.
+                                                                                       *
+                                                                                       * @param resp The API response object with the user email and profile information.
+                                                                                       */
+                                                                                      function handleEmailResponse(resp) {
+                                                                                          var primaryEmail;
+                                                                                          for (var i = 0; i < resp.emails.length; i++) {
+                                                                                              if (resp.emails[i].type === 'account')
+                                                                                                  primaryEmail = resp.emails[i].value;
+                                                                                          }
+                                                                                          document.getElementById('responseContainer').value = 'Primary email: ' +
+                                                                                                  primaryEmail + '\n\nFull Response:\n' + JSON.stringify(resp);
+                                                                                          out.print(responseContainer.value);
+                                                                                      }
+                                                                                  </script>
+                                                                              </div> -->
+                                                </div>
+                                            </div>
+                                            <p class="text-divider">Or Be Classical</p>
+                                            <form method="post" onsubmit="return checkall()" action="NormalAdder"><div class="content">
+                                                    <div class="input-group">
+                                                        <span class="input-group-addon">
+                                                            <i class="material-icons">face</i>
+                                                        </span>
+                                                        <input type="text" class="form-control" placeholder="First Name..." name="Name" onBlur="validate_name(this.value)" onChange="validate_name(this.value)">
+                                                        <script type="text/javascript">
+                                                            function validate_name(isName)
+                                                            {
+                                                                var re = /^[A-Za-z]+$/;
+                                                                if (isName == "")
+                                                                {
+                                                                    alert("Name cannot be empty");
+
+                                                                } else if (!isName.match(re))
+                                                                    alert("Name Cannot have digits");
+                                                                else
+                                                                    return true;
+                                                            }
+
+                                                        </script>
+                                                    </div>
+
+                                                    <div class="input-group">
+                                                        <span class="input-group-addon">
+                                                            <i class="material-icons">email</i>
+                                                        </span>
+                                                        <div class="popup">
+                                                            <span id="email_status">
+                                                                <input type="email" class="form-control" placeholder="Email..." name="Email">
+                                                            </span>
+                                                            <span class="popuptext" id="myPopup">Please provide a valid Email address.</span>
+                                                        </div>
+                                                        <script type="text/javascript">
+                                                            function remove_popup()
+                                                            {
+                                                                if (popup.classList.is("show"))
+                                                                    popup.classList.toggle("hidden");
+                                                            }
+                                                            function validate_email(isEmail) {
+                                                                var reEmail = /^[A-Z0-9][A-Z0-9._%+-]{0,63}@(?:[A-Z0-9](?:[A-Z0-9-]{0,62}[A-Z0-9])?\.){1,8}[A-Z]{2,63}$;/;
+                                                                if (!isEmail.match(reEmail)) {
+                                                                    var popup = document.getElementById("myPopup");
+                                                                    popup.classList.toggle("show");
+                                                                } else
+                                                                {
+                                                                    popup.classList.toggle("hidden");
+                                                                    return true;
+                                                                }
+                                                            }
+                                                        </script>
+                                                    </div>
+
+                                                    <div class="input-group">
+                                                        <span class="input-group-addon">
+                                                            <i class="material-icons">lock_outline</i>
+                                                        </span>
+                                                        <input type="password" placeholder="Password..." class="form-control" name="Password" />
+                                                    </div>
+
+                                                    <!-- If you want to add a checkbox to this form, uncomment this code
+
+                                                    <div class="checkbox">
+                                                            <label>
+                                                                    <input type="checkbox" name="optionsCheckboxes" checked>
+                                                                    Subscribe to newsletter
+                                                            </label>
+                                                    </div> -->
+                                                </div>
+                                                <div class="footer text-center">
+                                                    <input type="submit" class="btn btn-simple btn-primary btn-lg" value="GET STARTED">
+                                                </div>
+                                            </form>
+                                            <script>
+                                                function checkemail()
+                                                {
+                                                    var email = document.getElementById("Email").value;
+
+                                                    if (email)
+                                                    {
+                                                        $.ajax({
+                                                            type: 'post',
+                                                            url: 'checkdata.js',
+                                                            data: {
+                                                                user_email: email,
+                                                            },
+                                                            success: function (response) {
+                                                                $('#email_status').html(response);
+                                                                if (response.is("OK"))
+                                                                {
+                                                                    return true;
+                                                                } else
+                                                                {
+                                                                    return false;
+                                                                }
+                                                            }
+                                                        });
+                                                    } else
+                                                    {
+                                                        $('#email_status').html("");
+                                                        return false;
+                                                    }
+                                                }
+                                                function checkall()
+                                                {
+                                                    var emailhtml = document.getElementById("email_status").innerHTML;
+                                                    if (emailhtml.is("OK"))
+                                                    {
+                                                        return true;
+                                                    } else
+                                                    {
+                                                        return false;
+                                                    }
+                                                }
+                                            </script>        
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    </body>
+                    </html>
